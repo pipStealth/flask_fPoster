@@ -1,0 +1,17 @@
+{% extends 'admin/base_admin.html' %}
+
+{% block content %}
+    {{ super() }}
+    <div id="delete" class="wnd_dlg_back login_wnd">
+        <div class="delete">
+            <p class="title">Admin-Panel</p>
+            {% for cat, msg in get_flashed_messages(True) %}
+                <div class="flash {{cat}}">{{msg}}</div>
+            {% endfor %}
+            <form action="{{ url_for('admin.delete_account') }}" method="post">
+                <p><label class="form-label">Type email of account to delete: </label><input type="text" name="email" /></p>
+                <p align="center"><input class="login_button" type="submit" value="Delete"></p>
+            </form>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,225 @@
+html, body {
+    font-family: "Arial";
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1b2b37; /* Set the background color to gray */
+    color: #ccc; /* Light gray text color */
+}
+
+/* Styling for links */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+
+/* Clearing floats */
+.clear {
+    clear: both;
+}
+
+/* Styling for the main menu */
+ul.mainmenu {
+    list-style: none;
+    background-color: rgb(204, 231, 30);
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+/* Styling for main menu items */
+ul.mainmenu li {
+    float: left;
+    margin: 18px 40px 0 50px;
+}
+ul.mainmenu li.last {
+    float: right;
+}
+
+/* Styling for main menu links */
+ul.mainmenu li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+ul.mainmenu li a:hover {
+    color: #000000;
+}
+
+/* Styling for content div */
+div.content {
+    margin: 10px;
+}
+
+/* Styling for form labels and inputs */
+.form-contact label {
+    display: inline-block;
+    min-width: 80px;
+}
+
+.form-contact p {
+    margin: 10px 0;
+}
+.form-contact input[type=submit],
+.form-contact textarea {
+    font-size: 16px;
+}
+
+.flash {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.flash.success {
+    background-color: #d4edda; /* Light green background for success messages */
+    color: #155724; /* Dark green text color for success messages */
+}
+
+.flash.error {
+    background-color: #f8d7da; /* Light red background for error messages */
+    color: #721c24; /* Dark red text color for error messages */
+}
+
+/* Styling for the list of posts */
+ul.list-posts {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 600px;
+}
+
+/* Styling for each post item */
+ul.list-posts li {
+    margin: 20px 0 0;
+    border: 1px solid #eee;
+}
+
+/* Styling for post titles */
+ul.list-posts .title {
+    margin: 0;
+    padding: 5px;
+    background: #eee;
+}
+
+/* Styling for post announcements */
+ul.list-posts .annonce {
+    margin: 0;
+    padding: 10px 5px;
+}
+
+.form-contact {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff; /* White background for the form */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-contact p {
+    margin-bottom: 15px;
+}
+
+.form-contact label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-contact input[type="text"],
+.form-contact input[type="password"],
+.form-contact input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-contact input[type="submit"] {
+    background-color: #4285f4; /* Google blue button color */
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-contact input[type="submit"]:hover {
+    background-color: #3c7dc3; /* Darker shade on hover */
+}
+
+.flash {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.flash.success {
+    background-color: #4caf50; /* Green background for success messages */
+    color: #fff;
+}
+
+.flash.error {
+    background-color: #e74c3c; /* Red background for error messages */
+    color: #fff;
+}
+
+.profile-table {
+    width: 100%;
+}
+
+.profile-ava img {
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 100%;
+    margin-bottom: 100px;
+}
+
+.profile-panel {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.profile-info {
+    list-style: none;
+    padding: 0;
+}
+
+.profile-info li {
+    margin-bottom: 10px;
+}
+
+/* Стили для формы загрузки аватара */
+.profile-load {
+    margin-top: 20px;
+}
+
+.profile-load form {
+    margin-top: 10px;
+}
+
+.profile-load input[type="file"] {
+    margin-bottom: 10px;
+}
+
+/* Стили для ссылки Logout */
+.profile-panel a {
+    text-decoration: none;
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.profile-panel a:hover {
+    color: #b52b27;
+}

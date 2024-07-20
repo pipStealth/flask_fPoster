@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{ super() }}
+<style>
+    .user-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .avatar-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        border-radius: 100%;
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+        background-color: #f0f0f0;
+        color: #888;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .avatar-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+
+<h1>{{ title }}</h1>
+
+<div class="user-info">
+    <div class="avatar-container">
+        {% if ava %}
+            <img src="{{ url_for('uAva', user_id=user_id) }}" alt="User Avatar">
+        {% else %}
+            User Avatar
+        {% endif %}
+    </div>
+    <div>
+        <p>Name: {{ name }}</p>
+        <hr>
+    </div>
+</div>
+
+<div>
+    {{ post | safe }}
+</div>
+{% if additional_text %}
+<div>
+    {{ additional_text | safe }}
+</div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{ super() }}
+{% for cat, msg in get_flashed_messages(True) %}
+<div class="flash {{cat}}">{{msg}}</div>
+{% endfor %}
+<form action="{{url_for('addPost')}}" method="post" class="form-contact">
+<p><label>Post's name: </label> <input type="text" name="name" value="" required />
+<p><label>Castom URL of your post: </label> <input type="text" name="url" value="" required />
+<p><label>The post's text:</label>
+<p><textarea name="post" rows=7 cols=40></textarea>
+<p><input type="submit" value="Add" />
+</form>
+
+<!-- Display standard text after creating a new post -->
+{% endblock %}
